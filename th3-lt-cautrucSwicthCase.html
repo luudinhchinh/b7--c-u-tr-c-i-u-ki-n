@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let browser = prompt('nhập tên trình duyệt');
+        switch(browser){
+            case 'edge': alert('Youve got the Edge!'); break;
+            case 'chrome': 
+            case 'firefox': 
+            case 'safari': 
+            case 'opera': 
+                alert('Okay we support these browsers too');break;
+            default: alert('We hope that this page looks ok!');break;
+        }
+    </script>
+    <script>
+        let a = prompt('a?');
+        switch(a){
+            case 0: alert('0');break;
+            case 1: alert('1');break;
+            case 2: 
+            case 3: 
+               alert('2,3');break;
+        }
+        
+    </script>
+    <script>
+        let num = parseFloat('nhập vào một số:');
+        if(num>0){
+            alert('số dương:' + num);
+        }else if(num<0) {
+            alert('số âm: ' + num);
+        }else {alert('0')}
+    </script>
+</body>
+</html>
