@@ -7,10 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <button id="th1">th-1</button><br>
-    <button id="th2">th-2</button><br>
+    <button id="th1">th-1</button><br><br>
+    <button id="th2">th-2</button><br><br>
     <button id="th3">th-3</button>
     <script>
+        // bài thực hành 1
         let th1 = document.getElementById('th1');
         th1.addEventListener('click', function(){
         let browser = prompt('nhập tên trình duyệt');
@@ -24,6 +25,7 @@
             default: alert('We hope that this page looks ok!');break;
         }})
 
+        // bài thực hành 2
         let th2 = document.getElementById('th2');
         th2.addEventListener('click', function(){
             let a = parseInt(prompt('a?='));
@@ -36,6 +38,7 @@
         }
         })
 
+        //bài thực hành 3
         let th3 = document.getElementById('th3');
         th3.addEventListener('click', function(){
             let num = parseFloat(prompt('nhập vào một số:'));
