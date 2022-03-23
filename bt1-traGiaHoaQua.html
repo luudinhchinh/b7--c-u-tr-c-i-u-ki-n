@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div>
+            <h1>GIÁ HOA QUẢ</h1>
+            <input id="textInput" type="text">
+            <input id="checkbox" type="button" value="kiểm tra">
+       </div>
+       <div id="result"></div>
+       <script>
+            let oi = 'ổi', dua = 'dưa hấu', tao = 'táo', soai = 'soài', cam = 'cam', chomChom = 'chôm chôm', manCut = 'măng cụt';
+            let input = document.getElementById('textInput');
+            input.addEventListener('change', function(){
+                input = input.value;
+                console.log('input');
+            })
+            let result = document.getElementById('result');
+            let check = document.getElementById('checkBox');
+            check.addEventListener('click', function(){
+            switch(input){
+               case 'oi': result.innerText('20000 VNĐ/kg')
+                          console.log('oi'); break;
+               case 'dua': result.innerText('20000 VNĐ/kg'); break;
+               case 'tao': result.innerText('30000 VNĐ/kg'); break;
+               case 'soai': result.innerText('30000 VNĐ/kg'); break;
+               case 'cam': result.innerText('40000 VNĐ/kg'); break;
+               case 'chomChom': result.innerText('40000 VNĐ/kg'); break;
+               case 'manCut': result.innerText('50000 VNĐ/kg'); break;
+            }
+            })
+        </script>
+</body>
+</html>
