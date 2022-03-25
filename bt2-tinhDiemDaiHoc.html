@@ -40,20 +40,19 @@
     </div>
     <div id="result"></div>
     <script>
-        
-        function tinhDiem(){
-            let toan = parseInt(document.getElementById('toan').value);
+        let toan = parseInt(document.getElementById('toan').value);
             let van = parseInt(document.getElementById('van').value);
             let anh = parseInt(document.getElementById('anh').value);
             let result = document.getElementById('result');
+        function tinhDiem(){
             let tong = document.getElementById('td').value;
             tong = toan + van + anh;
             let area = document.getElementById('area');
-            switch(area){
-                case 'kv1': result.innerText = "diểm " + (tong + 0.5); break;
-                case 'kv2': result.innerText = "diểm " + (tong + 0.75); break;
-                case 'kv3': result.innerText = "diểm " + (tong + 0.25); break;
-                case 'kv4': result.innerText = "diểm " + tong ; break;
+            switch(area.value){
+                case 'kv1': result.innerText = "tổng điểm đại học khối D của bạn là: " + (tong + 0.5); break;
+                case 'kv2': result.innerText = "tổng điểm đại học khối D của bạn là: " + (tong + 0.75); break;
+                case 'kv3': result.innerText = "tổng điểm đại học khối D của bạn là: " + (tong + 0.25); break;
+                case 'kv4': result.innerText = "tổng điểm đại học khối D của bạn là: " + tong ; break;
             }
             
         }

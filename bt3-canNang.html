@@ -10,7 +10,7 @@
     <script>
         let canNang = parseFloat(prompt('nhập vào cân nặng:'));
         let chieuCao = parseFloat(prompt('nhập vào chiều cao:'));
-        let bmi = canNang/(chieuCao*chieuCao);
+        let bmi = canNang/(chieuCao*2);
         if(bmi<16){
             console.log('độ gầy 3');
         }else if(16<=bmi<17){
