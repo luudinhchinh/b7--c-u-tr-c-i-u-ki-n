@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>nhập một tháng trong năm</h1>
+        <input type="number" id="textBox" min="1" max="12">
+        <button id="check">xem</button> 
+        <br>
+        <br>
+        <span id="result"></span>
+    </div>
+    <script>
+        let text = document.getElementById("textBox");
+        let result = document.getElementById('result');
+        let day ;
+        let check =document.getElementById('check');
+        check.addEventListener('click', function(){
+            if(text.value != ''){
+                n = parseInt(text.value);
+                switch(n){
+                 
+                 case 2: day='28 ngày'; break;
+                 case 1: 
+                 case 3:            
+                 case 5:  
+                 case 7: 
+                 case 8:   
+                 case 10: 
+                 case 12:  day='31 ngày'; break;
+                 case 4: 
+                 case 6: 
+                 case 9: 
+                 case 11: day='30 ngày'; break;
+                   
+             }
+             result.innerText= 'tháng này có: ' + day;
+            }
+        })
+    </script>
+</body>
+</html>
